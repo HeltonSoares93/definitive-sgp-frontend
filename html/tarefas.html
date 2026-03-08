@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
@@ -31,12 +31,12 @@
           <li class="nav-item">
             <a class="nav-link fs-5" aria-current="page" href="/html/dashboard.html"> <span><svg xmlns="
               http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-              class="bi bi-file-earmark-bar-graph" viewBox="0 0 16 16">
-              <path
-                d="M10 13.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5z" />
-              <path
-                d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
-              </svg></span> Dashboard
+                  class="bi bi-file-earmark-bar-graph" viewBox="0 0 16 16">
+                  <path
+                    d="M10 13.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5z" />
+                  <path
+                    d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
+                </svg></span> Dashboard
             </a>
           </li>
           <li class="nav-item">
@@ -119,7 +119,7 @@
         </tr>
       </thead>
 
-      <tbody>
+      <tbody id="tabela-tarefas">
         <tr>
           <th scope="row">7219</th>
           <td> </td>
@@ -173,29 +173,30 @@
               <div class="row g-3 mb-3">
                 <div class="col-sm-7">
                   <label class="form-label">Título</label>
-                  <input type="text" class="form-control" placeholder="Título da tarefa" aria-label="Usuario">
+                  <input id="titulo-tarefa" type="text" class="form-control" placeholder="Título da tarefa"
+                    aria-label="Usuario">
                 </div>
               </div>
               <div class="row mb-3">
                 <div class="col-sm">
                   <label class="form-label">Descrição</label>
-                  <input type="text" class="form-control" placeholder="Descreva brevemente a tarefa."
-                    aria-label="Descrição">
+                  <input id="descricao-tarefa" type="text" class="form-control"
+                    placeholder="Descreva brevemente a tarefa." aria-label="Descrição">
                 </div>
               </div>
               <div class="row g-3">
 
                 <div class="col-sm-3">
                   <label class="form-label">Data de Início</label>
-                  <input class="form-control" type="date">
+                  <input id="inicio-tarefa" class="form-control" type="date">
                 </div>
                 <div class="col-sm-3">
                   <label class="form-label">Prazo de Conclusão</label>
-                  <input class="form-control" type="date">
+                  <input id="prazo-tarefa" class="form-control" type="date">
                 </div>
                 <div class="col-sm-3">
                   <label class="form-label">Status</label>
-                  <select class="form-select" aria-label="Default select example">
+                  <select id="status-tarefa" class="form-select" aria-label="Default select example">
                     <option selected>Selecione aqui</option>
                     <option value="1">Ativo</option>
                     <option value="2">Inativo</option>
@@ -204,11 +205,11 @@
                 </div>
                 <div class="col-sm-3">
                   <label class="form-label">Prioridade</label>
-                  <select class="form-select" aria-label="Default select example">
+                  <select id="prioridade-tarefa" class="form-select" aria-label="Default select example">
                     <option selected>Selecione aqui</option>
-                    <option value="1">Alta</option>
-                    <option value="2">Média</option>
-                    <option value="2">Baixa</option>
+                    <option value="Alta">Alta</option>
+                    <option value="Média">Média</option>
+                    <option value="Baixa">Baixa</option>
                   </select>
                 </div>
               </div>
@@ -216,7 +217,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btn-primary">Salvar</button>
+            <button type="button" class="btn btn-primary" onclick="salvarTarefa()">Salvar</button>
           </div>
         </div>
       </div>
@@ -234,6 +235,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+  <script src="/js/salvarTarefa.js"></script>
 </body>
 
 </html>

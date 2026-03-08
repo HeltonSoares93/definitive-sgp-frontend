@@ -31,13 +31,13 @@ function salvarUsuario() {
 
   localStorage.setItem('usuariosBancoDados', JSON.stringify(usuariosBancoDados));
 
-  renderizarTabela();
+  renderizarTabelaUsuarios();
 
-  console.log(`${usuario.nome} foi salvo com sucesso!`)
+  console.log(`${nome} foi salvo com sucesso!`)
 
 }
 
-function renderizarTabela() {
+function renderizarTabelaUsuarios() {
 
   const tabela = document.getElementById('tabela-usuarios');
 
