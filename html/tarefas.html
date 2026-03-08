@@ -176,12 +176,22 @@
                   <input id="titulo-tarefa" type="text" class="form-control" placeholder="Título da tarefa"
                     aria-label="Usuario">
                 </div>
+                <div class="col">
+                  <label class="form-label">Responsável</label>
+                  <select id="prioridade-tarefa" class="form-select" aria-label="Responsavel">
+                    <option selected>Selecione aqui</option>
+                    <option value="Helton">Helton</option>
+                    <option value="Soares">Soares</option>
+                    <option value="Elvis">Elvis</option>
+                  </select>
+                </div>
               </div>
               <div class="row mb-3">
                 <div class="col-sm">
                   <label class="form-label">Descrição</label>
-                  <input id="descricao-tarefa" type="text" class="form-control"
-                    placeholder="Descreva brevemente a tarefa." aria-label="Descrição">
+                  <textarea class="form-control" name="" id="descricao-tarefa" style="resize: none;"></textarea>
+                  <!-- <input id="descricao-tarefa" type="text" class="form-control"
+                    placeholder="Descreva brevemente a tarefa." aria-label="Descrição"> -->
                 </div>
               </div>
               <div class="row g-3">
